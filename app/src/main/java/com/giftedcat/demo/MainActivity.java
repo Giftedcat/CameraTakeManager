@@ -32,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
     private Context mContext;
 
     /** 权限相关*/
-    private static final int GETLOCATION = 100;
+    private static final int GETPERMS = 100;
     private String[] perms;
     private Handler permissionsHandler = new Handler();
 
@@ -66,7 +66,7 @@ public class MainActivity extends AppCompatActivity {
                 }
             });
         } else {
-            ActivityCompat.requestPermissions(MainActivity.this, perms, GETLOCATION);
+            ActivityCompat.requestPermissions(MainActivity.this, perms, GETPERMS);
         }
     }
 

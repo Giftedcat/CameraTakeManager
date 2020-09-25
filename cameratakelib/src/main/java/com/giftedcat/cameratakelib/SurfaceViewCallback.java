@@ -52,6 +52,10 @@ public class SurfaceViewCallback implements SurfaceHolder.Callback{
             hasSurface = true;
             mCamera = openFrontFacingCameraGingerbread();
 
+            if (mCamera == null){
+                listener.onFail("没有可用的摄像头");
+                return;
+            }
             mCamera.setPreviewCallback(new Camera.PreviewCallback() {
                 @Override
                 public void onPreviewFrame(byte[] bytes, Camera camera) {
