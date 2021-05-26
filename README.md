@@ -1,8 +1,6 @@
 # CameraTakeManager
 Android使用SurfaceView+Camera实现无卡顿拍照
 
-####（一）添加库
-
 ```
 	allprojects {
 		repositories {
