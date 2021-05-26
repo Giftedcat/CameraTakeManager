@@ -1,6 +1,22 @@
 # CameraTakeManager
 Android使用SurfaceView+Camera实现无卡顿拍照
 
+####（一）添加库
+
+```
+	allprojects {
+		repositories {
+			...
+			maven { url 'https://jitpack.io' }
+		}
+	}
+```
+```
+	dependencies {
+	        implementation 'com.github.Giftedcat:CameraTakeManager:1.0.0'
+	}
+```
+
 # 一、前言
 
 最近前同事兼好基友老戴问我要我之前那个可以无卡顿拍照的demo，翻了一翻我的demo项目文件夹，有点真实
